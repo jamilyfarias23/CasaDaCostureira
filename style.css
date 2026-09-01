@@ -1,0 +1,1112 @@
+/* ==========================================
+   CASA DA COSTUREIRA
+   STYLE.CSS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F4EC;
+    color:#333;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/* CORES */
+
+:root{
+
+    --vinho:#9E1B32;
+    --vinho2:#7D1628;
+    --bege:#F8F4EC;
+    --bege2:#EFE6D8;
+    --branco:#fff;
+    --cinza:#666;
+    --preto:#222;
+
+    --radius:22px;
+
+    --shadow:0 20px 50px rgba(0,0,0,.08);
+
+}
+
+/* SCROLL */
+
+::-webkit-scrollbar{
+
+    width:9px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--vinho);
+
+    border-radius:20px;
+
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    padding:18px 0;
+
+    transition:.4s;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(18px);
+
+}
+
+.navbar-scroll{
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+}
+
+.navbar-brand img{
+
+    height:75px;
+
+}
+
+.nav-link{
+
+    color:white;
+
+    font-weight:600;
+
+    margin-left:18px;
+
+    transition:.3s;
+
+}
+
+.navbar-scroll .nav-link{
+
+    color:#222;
+
+}
+
+.nav-link:hover{
+
+    color:var(--vinho);
+
+}
+
+/* BOTÕES */
+
+.btn-principal{
+
+    background:var(--vinho);
+
+    color:white;
+
+    border-radius:40px;
+
+    padding:14px 34px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-principal:hover{
+
+    background:var(--vinho2);
+
+    color:white;
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secundario{
+
+    border:2px solid white;
+
+    color:white;
+
+    border-radius:40px;
+
+    padding:14px 34px;
+
+    margin-left:12px;
+
+    transition:.35s;
+
+}
+
+.btn-secundario:hover{
+
+    background:white;
+
+    color:var(--vinho);
+
+}
+
+/* HERO */
+
+.hero{
+
+    min-height:100vh;
+
+    background:url("../imagens/fachada.jpg") center center/cover;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero-small{
+
+    color:#EFD38A;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-weight:700;
+
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:65px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+    line-height:1.1;
+
+}
+
+.hero p{
+
+    color:#eee;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    max-width:650px;
+
+}
+
+.hero-buttons{
+
+    margin-top:40px;
+
+}
+
+.hero-card img{
+
+    border-radius:25px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.30);
+
+}
+
+/* DIFERENCIAIS */
+
+.features{
+
+    margin-top:-70px;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.feature-box{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.feature-box:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.feature-box i{
+
+    font-size:45px;
+
+    color:var(--vinho);
+
+}
+
+.feature-box h3{
+
+    margin-top:20px;
+
+    font-size:30px;
+
+}
+
+.feature-box p{
+
+    color:var(--cinza);
+
+    margin-top:15px;
+
+    line-height:1.8;
+
+}
+
+/* TÍTULOS */
+
+.section-tag{
+
+    color:var(--vinho);
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+
+.section-text{
+
+    color:var(--cinza);
+
+    line-height:1.9;
+
+}
+
+
+/*=================================================
+                SOBRE
+=================================================*/
+
+.about{
+
+    padding:100px 0;
+
+    background:#fff;
+
+}
+
+.about img{
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.about img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.about .section-text{
+
+    margin-bottom:20px;
+
+}
+
+/*=================================================
+                CATÁLOGO
+=================================================*/
+
+.catalog{
+
+    background:var(--bege);
+
+    padding:100px 0;
+
+}
+
+/* Pesquisa */
+
+
+.search-box i{
+
+    color:var(--vinho);
+
+    font-size:22px;
+
+    margin-right:15px;
+
+}
+
+.search-box input{
+
+    border:none;
+
+    outline:none;
+
+    width:100%;
+
+    font-size:16px;
+
+    background:transparent;
+
+}
+
+/*=================================================
+            CATEGORIAS
+=================================================*/
+
+.category-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-bottom:50px;
+
+}
+
+.category-buttons button{
+
+    border:none;
+
+    background:white;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.category-buttons button:hover{
+
+    background:var(--vinho);
+
+    color:white;
+
+}
+
+.category-buttons button.active{
+
+    background:var(--vinho);
+
+    color:white;
+
+}
+
+/*=================================================
+                PRODUTOS
+=================================================*/
+
+.product-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.product-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.product-info{
+
+    padding:25px;
+    padding: 5px;
+    
+
+}
+
+.product-info h4{
+
+    color:var(--vinho);
+
+    font-size:24px;
+
+    margin-bottom:12px;
+
+}
+
+.product-info p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*=================================================
+                MARCAS
+=================================================*/
+
+.brands{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.brand-card{
+
+    background:var(--bege);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    font-weight:700;
+
+    color:var(--vinho);
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+
+}
+
+.brand-card:hover{
+
+    background:var(--vinho);
+
+    color:white;
+
+    transform:translateY(-8px);
+
+}
+
+/*=================================================
+            ANIMAÇÃO DOS CARDS
+=================================================*/
+
+.product-card,
+.brand-card,
+.feature-box,
+.contact-card{
+
+    transition:.4s;
+
+}
+
+.product-card:hover,
+.brand-card:hover,
+.feature-box:hover,
+.contact-card:hover{
+
+    box-shadow:0 25px 50px rgba(0,0,0,.15);
+
+}
+
+/*=================================================
+            EFEITO BRILHO
+=================================================*/
+
+.product-card{
+
+    position:relative;
+
+}
+
+.product-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.5),
+        transparent
+    );
+
+    transition:.8s;
+
+}
+
+.product-card:hover::before{
+
+    left:140%;
+
+}
+
+
+/*=================================================
+                LOCALIZAÇÃO
+=================================================*/
+
+.location{
+
+    padding:100px 0;
+
+    background:var(--bege2);
+
+}
+
+.location iframe{
+
+    width:100%;
+
+    border:0;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/*=================================================
+                CONTATO
+=================================================*/
+
+.contact{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.contact-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    height:100%;
+
+}
+
+.contact-card i{
+
+    font-size:50px;
+
+    color:var(--vinho);
+
+    margin-bottom:20px;
+
+}
+
+.contact-card h4{
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.contact-card p{
+
+    color:var(--cinza);
+
+    line-height:1.8;
+
+}
+
+/*=================================================
+                    RODAPÉ
+=================================================*/
+
+footer{
+
+    background:#1E1E1E;
+
+    color:white;
+
+    padding:70px 0 30px;
+
+}
+
+.footer-logo{
+
+    width:180px;
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    color:#d8d8d8;
+
+}
+
+.footer-links{
+
+    padding-left:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-links a{
+
+    color:#ddd;
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:white;
+
+    padding-left:8px;
+
+}
+
+footer hr{
+
+    border-color:rgba(255,255,255,.12);
+
+    margin:40px 0 20px;
+
+}
+
+/*=================================================
+            BOTÃO WHATSAPP
+=================================================*/
+
+.floating-whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    z-index:999;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.floating-whatsapp:hover{
+
+    transform:scale(1.12);
+
+    color:white;
+
+}
+
+.pulse{
+
+    animation:pulse 1s infinite;
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(37,211,102,.6);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 20px rgba(37,211,102,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(37,211,102,0);
+
+    }
+
+}
+
+/*=================================================
+                BOTÃO TOPO
+=================================================*/
+
+#btnTop{
+
+    position:fixed;
+
+    left:25px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--vinho);
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+
+}
+
+#btnTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+#btnTop:hover{
+
+    background:var(--vinho2);
+
+    transform:translateY(-5px);
+
+}
+
+/*=================================================
+                    LOADER
+=================================================*/
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.loader-logo img{
+
+    width:180px;
+
+    animation:logo 1.5s infinite alternate;
+
+}
+
+@keyframes logo{
+
+    from{
+
+        transform:scale(.95);
+
+    }
+
+    to{
+
+        transform:scale(1.05);
+
+    }
+
+}
+
+/*=================================================
+                RESPONSIVO
+=================================================*/
+
+@media(max-width:991px){
+
+    .hero{
+
+        text-align:center;
+
+        padding:140px 0 80px;
+
+    }
+
+    .hero h1{
+
+        font-size:46px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .btn-secundario{
+
+        margin-left: 0;
+   }
+
+    .navbar{
+
+        background:white;
+
+    }
+
+    .nav-link{
+
+        color:#222 !important;
+
+        margin:12px 0;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+    .section-title{
+
+        font-size:34px;
+
+    }
+
+    .category-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .category-buttons button{
+
+        width:100%;
+
+    }
+
+    .hero-card{
+
+        margin-top:40px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .navbar-brand img{
+
+        height:60px;
+
+    }
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .feature-box{
+
+        padding:30px 20px;
+
+    }
+
+    .product-card img{
+
+        height:220px;
+
+    }
+
+    .floating-whatsapp{
+
+        width:58px;
+
+        height:58px;
+
+        font-size:30px;
+
+    }
+
+    #btnTop{
+
+        width:48px;
+
+        height:48px;
+
+ 
+ }
+
+}
+
